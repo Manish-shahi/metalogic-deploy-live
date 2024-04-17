@@ -38,6 +38,20 @@
     font-weight: 600;
     color: #000;
     text-decoration: none;
+    position: relative;
+    padding-bottom: 3px;
+}
+.nav li a:before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    border-bottom: 3px solid #E53B3A;
+    transition: 0.4s;
+}
+.nav li a:hover:before{
+    width: 50%;
 }
 .nav-btn{
     background: #E53B3A;
